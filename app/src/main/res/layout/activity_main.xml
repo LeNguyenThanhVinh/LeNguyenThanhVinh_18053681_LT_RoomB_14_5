@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/txtNhap"
+        android:layout_width="350dp"
+        android:layout_height="83dp"
+        android:layout_marginTop="16dp"
+        android:drawableLeft="@drawable/ic_vector"
+        android:ems="10"
+        android:hint="\tThe place that you will visit in\n\tthe future"
+        android:inputType="textPersonName"
+        android:paddingLeft="10dp"
+        android:paddingRight="0dp"
+        android:paddingBottom="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnLuu"
+        android:layout_width="132dp"
+        android:layout_height="67dp"
+        android:layout_marginTop="20dp"
+        android:text="Save"
+        app:layout_constraintStart_toStartOf="@+id/txtNhap"
+        app:layout_constraintTop_toBottomOf="@+id/txtNhap" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="136dp"
+        android:layout_height="67dp"
+        android:text="Cancel"
+        app:layout_constraintBottom_toBottomOf="@+id/btnLuu"
+        app:layout_constraintEnd_toEndOf="@+id/txtNhap"
+        app:layout_constraintTop_toTopOf="@+id/btnLuu" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recylerDiaChi"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnLuu" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
